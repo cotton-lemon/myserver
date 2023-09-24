@@ -34,5 +34,5 @@ async def root(param:codeParam):
     start=time.time()
     a=getcode(param.id,param.pw)
     code=await a;
-    print(f"time: {time.time().start}")
+    print(f"time: {time.time()-start}")
     return {"code": code}
